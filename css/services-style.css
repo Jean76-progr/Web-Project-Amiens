@@ -1,0 +1,148 @@
+/* Services Page Styles */
+
+/* Change background image for services page */
+.services-page #hero {
+    background-image: url('/img/services_background.jpg');
+}
+
+/* Emergency Services Styles */
+.priority-section {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.emergency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.emergency-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.emergency-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.emergency-card h3 {
+    color: #e63946;
+    margin-bottom: 0.5rem;
+}
+
+/* Service Card Styles */
+.service-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    padding: 1rem 1rem 0.5rem;
+    color: #1d3557;
+}
+
+.service-card p {
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-card ul {
+    padding: 0 2rem 1rem;
+    list-style-type: none;
+}
+
+.service-card ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.service-card ul li::before {
+    content: "•";
+    color: #1d3557;
+    position: absolute;
+    left: -1rem;
+}
+
+/* Transportation Styles */
+.transport-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.transport-info {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transport-info h3 {
+    color: #1d3557;
+    margin-bottom: 1rem;
+}
+
+.transport-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transport-info ul li {
+    margin-bottom: 0.5rem;
+}
+
+.fare-table {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fare-table h4 {
+    color: #1d3557;
+    margin-bottom: 1rem;
+}
+
+.fare-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fare-table th,
+.fare-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.fare-table th {
+    background-color: #f1faee;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .emergency-grid,
+    .transport-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+}

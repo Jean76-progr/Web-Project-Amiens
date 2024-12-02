@@ -1,0 +1,70 @@
+/* Events Page Styles */
+
+/* Change background image for events page */
+.events-page #hero {
+    background-image: url('/img/events_background.jpg');
+}
+
+/* Rest of the CSS remains the same */
+
+#events .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.event-card .date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+#calendar {
+    margin-top: 3rem;
+}
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.event-table th,
+.event-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-table th {
+    background-color: #f1faee;
+    font-weight: bold;
+    color: #474a59;
+}
+
+.event-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.event-table tr:hover {
+    background-color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    .event-table {
+        font-size: 0.9rem;
+    }
+
+    .event-table th,
+    .event-table td {
+        padding: 0.5rem;
+    }
+}

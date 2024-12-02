@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Styles */
+#hero {
+  background-image: url('/img/main_photo.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #f1faee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #f1faee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a8dadc;
+}
+
+/* Main Content Styles */
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f1faee;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3, .card p {
+  padding: 0 1rem;
+}
+
+.card h3 {
+  color: #474a59;
+  display: flex;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #33353a;
+  color: #f1faee;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+}

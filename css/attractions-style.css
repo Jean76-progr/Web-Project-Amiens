@@ -1,0 +1,95 @@
+/* Attractions Page Styles */
+
+/* Change background image for attractions page */
+.attractions-page #hero {
+    background-image: url('/img/attractions_background.jpg');
+}
+
+/* Attraction card styles */
+.attraction-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.attraction-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.attraction-card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #474a59;
+}
+
+.attraction-card p {
+    flex-grow: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #1d3557;
+    color: #f1faee;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.btn:hover {
+    background-color: #457b9d;
+}
+
+/* Category grid styles */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.category-item {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1faee;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.category-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.category-item h3 {
+    color: #474a59;
+}
+
+/* Map styles */
+.map-container {
+    width: 100%;
+    height: 400px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.placeholder-map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
