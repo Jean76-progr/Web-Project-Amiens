@@ -2,7 +2,7 @@
 
 /* Change background image for contact page */
 .contact-page #hero {
-    background-image: url('/img/contact_background.jpg');
+    background-image: url('img/contact_background.jpg');
 }
 
 /* Contact Container */

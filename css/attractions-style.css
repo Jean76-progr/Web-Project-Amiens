@@ -2,7 +2,7 @@
 
 /* Change background image for attractions page */
 .attractions-page #hero {
-    background-image: url('/img/attractions_background.jpg');
+    background-image: url('img/attractions_background.jpg');
 }
 
 /* Attraction card styles */

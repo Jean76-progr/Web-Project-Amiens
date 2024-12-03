@@ -2,7 +2,7 @@
 
 /* Change background image for services page */
 .services-page #hero {
-    background-image: url('/img/services_background.jpg');
+    background-image: url('img/services_background.jpg');
 }
 
 /* Emergency Services Styles */

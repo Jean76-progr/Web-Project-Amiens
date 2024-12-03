@@ -2,7 +2,7 @@
 
 /* Change background image for history page */
 .history-page #hero {
-    background-image: url('/img/history_background.jpg');
+    background-image: url('img/history_background.jpg');
 }
 
 /* Timeline styles */

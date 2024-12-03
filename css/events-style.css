@@ -2,7 +2,7 @@
 
 /* Change background image for events page */
 .events-page #hero {
-    background-image: url('/img/events_background.jpg');
+    background-image: url('img/events_background.jpg');
 }
 
 /* Rest of the CSS remains the same */
